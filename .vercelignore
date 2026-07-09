@@ -2,7 +2,6 @@
 .gitignore
 node_modules
 pnpm-lock.yaml
-package.json
 .DS_Store
 .env.development.local
 README.md

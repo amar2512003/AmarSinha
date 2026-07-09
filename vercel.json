@@ -1,5 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "echo 'Static site'",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
   "public": true,
