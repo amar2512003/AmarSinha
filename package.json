@@ -1,0 +1,11 @@
+{
+  "name": "amar-sinha-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Amar Sinha's personal portfolio site",
+  "scripts": {
+    "build": "echo 'Static site — no build step required'",
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve ."
+  }
+}
