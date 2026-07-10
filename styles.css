@@ -1,35 +1,35 @@
 /* --- SCHEMATIC / DATA-PIPELINE THEME --- */
 :root {
-    /* Backgrounds - deep blueprint navy */
-    --bg-primary: #0A0E1A;
-    --bg-secondary: #0D1424;
-    --bg-tertiary: #121B2E;
-    --bg-card: #101828;
+    /* Backgrounds - deep green forest */
+    --bg-primary: #0A1612;
+    --bg-secondary: #0D1A14;
+    --bg-tertiary: #122318;
+    --bg-card: #101C18;
 
-    /* Amber - "active node" accent */
-    --amber: #F0A83C;
-    --amber-bright: #FFC061;
-    --amber-glow: rgba(240, 168, 60, 0.35);
-    --amber-dim: rgba(240, 168, 60, 0.12);
+    /* Emerald - "active node" accent */
+    --amber: #10B981;
+    --amber-bright: #34D399;
+    --amber-glow: rgba(16, 185, 129, 0.35);
+    --amber-dim: rgba(16, 185, 129, 0.12);
 
-    /* Cyan - "edge / connection" accent */
-    --cyan: #4CC9F0;
-    --cyan-bright: #7FDBFF;
-    --cyan-glow: rgba(76, 201, 240, 0.3);
-    --cyan-dim: rgba(76, 201, 240, 0.12);
+    /* Teal - "edge / connection" accent */
+    --cyan: #14B8A6;
+    --cyan-bright: #2DD4BF;
+    --cyan-glow: rgba(20, 184, 166, 0.3);
+    --cyan-dim: rgba(20, 184, 166, 0.12);
 
-    /* Green - "success node" accent, used sparingly */
-    --green: #34D399;
-    --green-glow: rgba(52, 211, 153, 0.3);
+    /* Light Green - "success node" accent, used sparingly */
+    --green: #6EE7B7;
+    --green-glow: rgba(110, 231, 183, 0.3);
 
     /* Text */
-    --text-primary: #EDF1F9;
-    --text-secondary: #9AA7BD;
-    --text-muted: #5C6B84;
+    --text-primary: #E8F5F1;
+    --text-secondary: #A3B8B0;
+    --text-muted: #6B8178;
 
     /* Borders */
-    --border-subtle: rgba(76, 201, 240, 0.14);
-    --border-amber: rgba(240, 168, 60, 0.35);
+    --border-subtle: rgba(20, 184, 166, 0.14);
+    --border-amber: rgba(16, 185, 129, 0.35);
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -64,7 +64,7 @@ body {
     font-family: var(--font-body);
     background-color: var(--bg-primary);
     background-image:
-        radial-gradient(circle, rgba(76, 201, 240, 0.06) 1px, transparent 1px);
+        radial-gradient(circle, rgba(20, 184, 166, 0.06) 1px, transparent 1px);
     background-size: 28px 28px;
     color: var(--text-primary);
     line-height: 1.6;
@@ -704,7 +704,7 @@ section {
     height: 140px;
     background:
         linear-gradient(135deg, var(--bg-tertiary), var(--bg-card)),
-        radial-gradient(circle, rgba(76, 201, 240, 0.12) 1px, transparent 1px);
+        radial-gradient(circle, rgba(20, 184, 166, 0.12) 1px, transparent 1px);
     background-size: cover, 18px 18px;
     overflow: hidden;
     display: flex;
