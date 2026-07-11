@@ -1,0 +1,24 @@
+[build]
+  # No build step needed — this is a static site (index.html, script.js, styles.css)
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+
+# Fallback so refreshes / direct links to non-existent paths land on the homepage
+# instead of Netlify's default 404 page. Remove this if you don't want that behavior.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
