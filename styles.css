@@ -203,6 +203,20 @@ ul {
     height: 100%;
 }
 
+.hero-photo-large {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--amber);
+    box-shadow: 0 0 30px var(--amber-glow), inset 0 0 30px rgba(240, 168, 60, 0.1);
+    flex-shrink: 0;
+    margin-left: var(--spacing-lg);
+    z-index: 2;
+    position: relative;
+    order: 1;
+}
+
 .hero-content {
     position: relative;
     flex: 1;
@@ -1023,10 +1037,27 @@ textarea:focus-visible {
     .hero {
         text-align: left;
         padding-top: var(--spacing-xxl);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-content {
         max-width: 100%;
+        text-align: center;
+        margin-top: var(--spacing-lg);
+    }
+
+    .hero-photo-large {
+        width: 280px;
+        height: 280px;
+        margin-left: 0;
+        margin-bottom: var(--spacing-lg);
+        order: -1;
+    }
+
+    .hero-content {
+        order: 1;
     }
 
     .about-content {
@@ -1062,6 +1093,11 @@ textarea:focus-visible {
     .btn {
         padding: var(--spacing-sm) var(--spacing-md);
         font-size: 0.85rem;
+    }
+
+    .hero-photo-large {
+        width: 240px;
+        height: 240px;
     }
 
     .terminal-card {

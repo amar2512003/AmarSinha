@@ -12,12 +12,13 @@
     <style>
         .hero {
             position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
         .hero-photo-large {
-            position: absolute;
-            top: 50%;
-            right: 6%;
-            transform: translateY(-50%);
+            position: relative;
             width: 420px;
             height: 420px;
             border-radius: 50%;
@@ -25,17 +26,32 @@
             border: 4px solid rgba(255, 255, 255, 0.15);
             box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
             z-index: 2;
+            margin-left: 2rem;
+            flex-shrink: 0;
         }
         @media (max-width: 1200px) {
             .hero-photo-large {
                 width: 320px;
                 height: 320px;
-                right: 3%;
+                margin-left: 1.5rem;
             }
         }
         @media (max-width: 1024px) {
             .hero-photo-large {
-                display: none;
+                width: 280px;
+                height: 280px;
+                margin-left: 0;
+                margin-bottom: 2rem;
+                order: -1;
+            }
+            .hero {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 640px) {
+            .hero-photo-large {
+                width: 240px;
+                height: 240px;
             }
         }
     </style>
@@ -51,7 +67,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="AMAR_SINHA_CV.pdf" class="nav-btn" target="_blank">Resume</a>
+            <a href="/AMAR_SINHA_CV.pdf" class="nav-btn" target="_blank">Resume</a>
         </div>
     </nav>
 
@@ -60,7 +76,7 @@
             <canvas id="graphCanvas"></canvas>
         </div>
 
-        <img src="amar-photo.png" alt="Amar Sinha" class="hero-photo-large">
+        <img src="/amar-photo.png" alt="Amar Sinha" class="hero-photo-large">
 
         <div class="hero-content">
             <p class="hero-eyebrow">
@@ -240,6 +256,7 @@
                     </p>
                     <div class="project-links">
                         <a href="https://github.com/amar2512003/WhoWins2029" class="project-link" target="_blank">View on GitHub &rarr;</a>
+                        <a href="https://whowins2029.netlify.app/" class="project-link" target="_blank">BLOG &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -288,7 +305,7 @@
                     </p>
                     <div class="project-links">
                         <a href="https://github.com/amar2512003/Kolkata_metro" class="project-link" target="_blank">View on GitHub &rarr;</a>
-                        <a href="https://kolkata-metro-mu.vercel.app/" class="project-link" target="_blank">Live Demo &rarr;</a>
+                        <a href="https://amarkolkatametro.netlify.app/" class="project-link" target="_blank">Live Demo &rarr;</a>
                     </div>
                 </div>
             </div>
